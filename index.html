@@ -2,31 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | Article Hub</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Featured Articles</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4faf9;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #222;
+    }
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .card h2 {
+      margin-top: 0;
+    }
+    .read-more {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .read-more:hover {
+      text-decoration: underline;
+    }
+    .image-card {
+      text-align: center;
+    }
+    .image-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    .lorem-section {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-  <header class="bg-white shadow-md p-4">
-    <nav class="flex justify-between items-center max-w-5xl mx-auto">
-      <h1 class="text-2xl font-bold">Article Hub</h1>
-      <ul class="flex gap-6">
-        <li><a href="index.html" class="text-blue-600 font-semibold">Home</a></li>
-        <li><a href="articles.html">Articles</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<body>
+  <h1>Featured Articles</h1>
 
-  <main class="max-w-4xl mx-auto mt-10 px-4">
-    <h2 class="text-3xl font-bold mb-4">Welcome to Article Hub</h2>
-    <p class="text-lg mb-6">A curated place to share academic, professional, and research-based articles for students and professors alike.</p>
-    <a href="articles.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Explore Articles</a>
-  </main>
+  <div class="card">
+    <h2>The Rise of Digital Education</h2>
+    <p>Exploring how online learning platforms are transforming traditional education systems.</p>
+    <a class="read-more" href="#readmore">Read More →</a>
+  </div>
 
-  <footer class="mt-20 text-center py-4 text-sm text-gray-600">
-    &copy; 2025 Article Hub. All rights reserved.
-  </footer>
+  <div class="card">
+    <h2>Environmental Ethics in 2025</h2>
+    <p>Understanding our role and responsibilities in climate change through a moral lens.</p>
+    <a class="read-more" href="#readmore">Read More →</a>
+  </div>
+
+  <div id="readmore" class="lorem-section">
+    <h2>What is Lorem Ipsum?</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+
+    <h2>Why do we use it?</h2>
+    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout...</p>
+  </div>
+
+  <div class="card image-card">
+    <h2>Featured Image</h2>
+    <img src="House.jpeg" alt="House Image">
+    <p>This is a beautiful house design card added to the page.</p>
+  </div>
 </body>
 </html>
